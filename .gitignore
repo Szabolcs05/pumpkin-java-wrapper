@@ -1,0 +1,37 @@
+# Build output and editors
+/target/
+/release/
+/dependency-reduced-pom.xml
+/.idea/
+/.vscode/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
+
+# Local launcher/server state, binaries, credentials, and worlds
+/.pumpkin-wrapper/
+/pumpkin-wrapper.properties
+/pumpkin
+/pumpkin.exe
+/pumpkin-*.exe
+/*.jar
+/*.zip
+/*.tar.gz
+/config/
+/logs/
+/plugins/
+/world/
+/world_nether/
+/world_the_end/
+/server.properties
+/pumpkin.toml
+/eula.txt
+/whitelist.json
+/ops.json
+/banned-*.json
+/usercache.json
+/.env
+/.env.*

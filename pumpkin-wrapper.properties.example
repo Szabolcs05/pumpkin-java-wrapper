@@ -1,0 +1,35 @@
+# Pumpkin Java Wrapper configuration (UTF-8).
+# Copy this file to pumpkin-wrapper.properties, or let the launcher create it.
+# Environment overrides are listed below; they take precedence over this file.
+
+# First installation: latest stable release. Subsequent starts reuse that version.
+# Other choices: canary, nightly, or an exact upstream tag, e.g. 0.2.0+26.3-26.51.
+# Updating is explicit: --wrapper-update (optionally with --wrapper-download-only).
+# Environment: PUMPKIN_WRAPPER_RELEASE
+release=latest
+
+# auto detects the running JVM's OS and CPU; Linux defaults to musl.
+# Supported: linux-x64-musl, linux-arm64-musl, linux-x64, linux-arm64,
+#            windows-x64, windows-arm64, macos-arm64.
+# The selected upstream release must provide the requested asset.
+# Environment: PUMPKIN_WRAPPER_PLATFORM
+platform=auto
+
+# Optional local executable. This bypasses downloads and platform selection.
+# Paths are relative to the server working directory; absolute paths also work.
+# Use / in Windows paths, e.g. C:/servers/pumpkin/pumpkin.exe.
+# Examples: binary=pumpkin or binary=pumpkin.exe
+# --wrapper-update cannot be used when binary is set.
+# Environment: PUMPKIN_WRAPPER_BINARY
+binary=
+
+# Optional SHA-256 pin: 64 hexadecimal characters, without a sha256: prefix.
+# Official downloads always require and check GitHub's SHA-256, even when blank.
+# Local executables are checked only when this pin is set.
+# Environment: PUMPKIN_WRAPPER_SHA256
+sha256=
+
+# Grace period for Pumpkin to save and stop when the JVM shuts down (1-300).
+# Configure the hosting panel to allow enough time before forcibly killing it.
+# Environment: PUMPKIN_WRAPPER_SHUTDOWN_TIMEOUT_SECONDS
+shutdown-timeout-seconds=30

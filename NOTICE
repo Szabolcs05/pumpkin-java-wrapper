@@ -1,0 +1,42 @@
+Pumpkin Java Wrapper
+Copyright (c) 2026 Szabolcs05
+https://github.com/Szabolcs05/pumpkin-java-wrapper
+
+The wrapper's original source is licensed under the GNU General Public
+License, version 3 only (SPDX: GPL-3.0-only). See LICENSE for the full terms.
+
+Third-party components retain their own copyright and license notices.
+
+Gson 2.14.0
+Copyright 2008 Google LLC
+https://github.com/google/gson
+Licensed under the Apache License, Version 2.0.
+Gson is included in the executable wrapper JAR. Its license is provided in
+third-party/gson-LICENSE.txt and in the JAR's META-INF/licenses directory.
+Release source archives include the matching Gson source JAR.
+
+Error Prone annotations 2.48.0
+https://github.com/google/error-prone
+Licensed under the Apache License, Version 2.0.
+These annotations are a transitive dependency of Gson and are included in
+the executable JAR. Their license is provided in
+third-party/error-prone-LICENSE.txt and in the JAR's META-INF/licenses
+directory. Release source archives include their matching source JAR.
+
+Apache Maven Wrapper
+https://maven.apache.org/wrapper/
+Licensed to the Apache Software Foundation (ASF) under contributor license
+agreements and distributed under the Apache License, Version 2.0. The
+wrapper scripts retain their license headers. Maven Wrapper is a build tool
+and is not included in the executable application JAR.
+
+Pumpkin Minecraft Server
+https://github.com/Pumpkin-MC/Pumpkin
+Pumpkin is a separate project licensed under the GNU General Public
+License, version 3. No Pumpkin native executable is included in this
+repository or the wrapper's releases. The launcher obtains official
+executables directly from Pumpkin's upstream GitHub releases when asked
+to install or update, or runs an executable supplied by the user.
+
+This project is independent of Pumpkin-MC. It is not an official Minecraft
+product and is not approved by or associated with Mojang or Microsoft.
